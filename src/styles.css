@@ -1,0 +1,25 @@
+html, body {
+    background: url(../images/test1.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    font-family: 'SnellRegular';
+}
+
+@font-face {
+    font-family: 'SnellRegular';
+    src: url("../fonts/SnellBT-Regular.otf")
+}
+
+#header, #sub-header {
+    font-size: 150px;
+    color: white;
+    text-align: center;
+    padding-top: 10%;
+}
+
+#sub-header {
+    font-size: 40px;
+    padding: 0;
+}
