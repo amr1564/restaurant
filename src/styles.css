@@ -12,14 +12,31 @@ html, body {
     src: url("../fonts/SnellBT-Regular.otf")
 }
 
-#header, #sub-header {
+#header-container {
+    display: flex;
+    justify-content: center;
+}
+
+.nav {
+    color: white;
+    font-size: 48px;
+    margin: 0px 70px;
+}
+
+.nav:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+}
+
+#title, #sub-title {
     font-size: 150px;
     color: white;
     text-align: center;
     padding-top: 10%;
 }
 
-#sub-header {
+#sub-title {
     font-size: 40px;
     padding: 0;
 }
