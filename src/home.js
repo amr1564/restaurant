@@ -1,4 +1,7 @@
 const homeLoad = () => {
+    const subContent = document.getElementsByClassName('sub-content');
+    Array.from(subContent).forEach(element => element.remove());
+    
     const title = document.createElement('div');
     title.classList.add('sub-content');
     title.id = 'title';
