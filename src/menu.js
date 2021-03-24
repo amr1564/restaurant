@@ -51,7 +51,7 @@ const menuLoad = () => {
     newContent.push(desert2);
 
     menuItems.forEach(function(e) {
-        e.classList.add('menu-item');
+        e.classList.add('sub-item');
     })
 
     newContent.forEach(function(e) {
@@ -60,4 +60,4 @@ const menuLoad = () => {
     })
 }
 
-export {menuLoad};
+export { menuLoad };

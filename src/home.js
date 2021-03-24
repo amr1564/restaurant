@@ -1,18 +1,25 @@
 const homeLoad = () => {
+    const content = document.getElementById('content');
+
     const subContent = document.getElementsByClassName('sub-content');
     Array.from(subContent).forEach(element => element.remove());
     
+    let newContent = [];
+
     const title = document.createElement('div');
-    title.classList.add('sub-content');
     title.id = 'title';
     title.innerHTML = 'Cafe Odin';
-    content.appendChild(title);
+    newContent.push(title);
 
     const subTitle = document.createElement('div');
-    subTitle.classList.add('sub-content');
     subTitle.id = 'sub-title';
     subTitle.innerHTML = 'Fine dining for software developers';
-    content.appendChild(subTitle);
+    newContent.push(subTitle);
+
+    newContent.forEach(function(e) {
+        e.classList.add('sub-content');
+        content.appendChild(e);
+    })
 }
 
 export { homeLoad }

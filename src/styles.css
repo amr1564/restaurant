@@ -1,5 +1,5 @@
 html, body {
-    background: url(../images/test1.jpg) no-repeat center center fixed; 
+    background: url(../images/homepage.jpg) no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -46,7 +46,15 @@ h1 {
     margin-bottom: 10px;
 }
 
-.menu-item {
+.sub-item {
     font-size: 30px;
     margin: 20px;
+}
+
+.address {
+    font-size: 60px;
+}
+
+#address1 {
+    margin-top: 250px;
 }

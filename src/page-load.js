@@ -22,7 +22,6 @@ const pageLoad = () => {
     contact.id = 'contact';
     contact.innerHTML = 'Contact';
     headerContainer.appendChild(contact);
-
 }
 
-export {pageLoad};
+export { pageLoad };
