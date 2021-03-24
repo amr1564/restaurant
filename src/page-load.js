@@ -1,4 +1,4 @@
-const pageLoad = (() => {
+const pageLoad = () => {
     const content = document.getElementById('content');
     
     const headerContainer = document.createElement('div');
@@ -23,16 +23,6 @@ const pageLoad = (() => {
     contact.innerHTML = 'Contact';
     headerContainer.appendChild(contact);
 
-    const title = document.createElement('div');
-    title.id = 'title';
-    title.innerHTML = 'Cafe Odin';
-    content.appendChild(title);
+}
 
-    const subTitle = document.createElement('div');
-    subTitle.id = 'sub-title';
-    subTitle.innerHTML = 'Fine dining for software developers';
-    content.appendChild(subTitle);
-
-})()
-
-export default pageLoad;
+export {pageLoad};

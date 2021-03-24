@@ -10,13 +10,33 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
+/***/ "./src/home.js":
+/*!*********************!*\
+  !*** ./src/home.js ***!
+  \*********************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"homeLoad\": () => (/* binding */ homeLoad)\n/* harmony export */ });\nconst homeLoad = () => {\n    const title = document.createElement('div');\n    title.classList.add('sub-content');\n    title.id = 'title';\n    title.innerHTML = 'Cafe Odin';\n    content.appendChild(title);\n\n    const subTitle = document.createElement('div');\n    subTitle.classList.add('sub-content');\n    subTitle.id = 'sub-title';\n    subTitle.innerHTML = 'Fine dining for software developers';\n    content.appendChild(subTitle);\n}\n\n\n\n//# sourceURL=webpack://restaurant/./src/home.js?");
+
+/***/ }),
+
 /***/ "./src/index.js":
 /*!**********************!*\
   !*** ./src/index.js ***!
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _page_load__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./page-load */ \"./src/page-load.js\");\n\n\n(0,_page_load__WEBPACK_IMPORTED_MODULE_0__.default)();\n\n//# sourceURL=webpack://restaurant/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _page_load__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./page-load */ \"./src/page-load.js\");\n/* harmony import */ var _home__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./home */ \"./src/home.js\");\n/* harmony import */ var _menu__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./menu */ \"./src/menu.js\");\n\n\n\n\n(0,_page_load__WEBPACK_IMPORTED_MODULE_0__.pageLoad)();\n(0,_home__WEBPACK_IMPORTED_MODULE_1__.homeLoad)();\n\nconst home = document.getElementById('home');\nhome.addEventListener('click', _home__WEBPACK_IMPORTED_MODULE_1__.homeLoad);\n\nconst menu = document.getElementById('menu');\nmenu.addEventListener('click', _menu__WEBPACK_IMPORTED_MODULE_2__.menuLoad);\n\n\n//# sourceURL=webpack://restaurant/./src/index.js?");
+
+/***/ }),
+
+/***/ "./src/menu.js":
+/*!*********************!*\
+  !*** ./src/menu.js ***!
+  \*********************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"menuLoad\": () => (/* binding */ menuLoad)\n/* harmony export */ });\nconst menuLoad = () => {\n    const subContent = document.getElementsByClassName('sub-content');\n    Array.from(subContent).forEach(element => element.remove());\n\n    \n}\n\n\n\n//# sourceURL=webpack://restaurant/./src/menu.js?");
 
 /***/ }),
 
@@ -26,7 +46,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _pag
   \**************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nconst pageLoad = (() => {\n    const content = document.getElementById('content');\n    \n    const headerContainer = document.createElement('div');\n    headerContainer.id = 'header-container';\n    content.appendChild(headerContainer);\n\n    const home = document.createElement('div');\n    home.classList.add('nav');\n    home.id = 'home';\n    home.innerHTML = 'Home';\n    headerContainer.appendChild(home);\n\n    const menu = document.createElement('div');\n    menu.classList.add('nav');\n    menu.id = 'menu';\n    menu.innerHTML = 'Menu';\n    headerContainer.appendChild(menu);\n    \n    const contact = document.createElement('div');\n    contact.classList.add('nav');\n    contact.id = 'contact';\n    contact.innerHTML = 'Contact';\n    headerContainer.appendChild(contact);\n\n    const title = document.createElement('div');\n    title.id = 'title';\n    title.innerHTML = 'Cafe Odin';\n    content.appendChild(title);\n\n    const subTitle = document.createElement('div');\n    subTitle.id = 'sub-title';\n    subTitle.innerHTML = 'Fine dining for software developers';\n    content.appendChild(subTitle);\n\n})()\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (pageLoad);\n\n//# sourceURL=webpack://restaurant/./src/page-load.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"pageLoad\": () => (/* binding */ pageLoad)\n/* harmony export */ });\nconst pageLoad = () => {\n    const content = document.getElementById('content');\n    \n    const headerContainer = document.createElement('div');\n    headerContainer.id = 'header-container';\n    content.appendChild(headerContainer);\n\n    const home = document.createElement('div');\n    home.classList.add('nav');\n    home.id = 'home';\n    home.innerHTML = 'Home';\n    headerContainer.appendChild(home);\n\n    const menu = document.createElement('div');\n    menu.classList.add('nav');\n    menu.id = 'menu';\n    menu.innerHTML = 'Menu';\n    headerContainer.appendChild(menu);\n    \n    const contact = document.createElement('div');\n    contact.classList.add('nav');\n    contact.id = 'contact';\n    contact.innerHTML = 'Contact';\n    headerContainer.appendChild(contact);\n\n}\n\n\n\n//# sourceURL=webpack://restaurant/./src/page-load.js?");
 
 /***/ })
 
